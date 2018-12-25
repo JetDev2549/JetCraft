@@ -186,8 +186,7 @@ class Model(object):
         for x in xrange(-n, n + 1, s):
             for z in xrange(-n, n + 1, s):
                 # create a layer stone an grass everywhere.
-                self.add_block((x, y, z), GRASS, immediate=False)
-                self.add_block((x, y - 1, z), DIRT, immediate=False)
+                self.add_block((x, y - 1, z), GRASS, immediate=False)
                 self.add_block((x, y - 2, z), DIRT, immediate=False)
                 self.add_block((x, y - 3, z), DIRT, immediate=False)
                 self.add_block((x, y - 4, z), DIRT, immediate=False)
